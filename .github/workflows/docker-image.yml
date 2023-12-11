@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v3
 
     # Execute 'tagize' action
-    - uses: langroodi/tagize@v1
+    - uses: georgeneto/tags-versioning@v1

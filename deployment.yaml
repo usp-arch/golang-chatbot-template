@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: usp-chatgpt-deployment
+  name: my-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: usp-chatgpt
+      app: my-app
   template:
     metadata:
       labels:
-        app: usp-chatgpt
+        app: my-app
     spec:
       containers:
-        - name: usp-chatgpt
-          image: rangeray/usp-chatgpt:latest
+        - name: usp-my-app
+          image: usp/my-app:latest
